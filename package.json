@@ -1,6 +1,6 @@
 {
   "name": "@whcg/whcg-period-summarizer",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "```html <whcg-period-summarizer></whcg-period-summarizer> ```",
   "main": "dist/index.js",
   "module": "dist/index.es6.js",
