@@ -85,7 +85,7 @@ export class WhcgPeriodSummarizer extends PolymerElement {
             result.data.yearlyamounts = yearlyamounts;
 
             return result;
-        })
+        });
 
         console.log('result');
         console.log(result);
@@ -117,7 +117,7 @@ export class WhcgPeriodSummarizer extends PolymerElement {
                 }
                 
             }, acc);
-        })
+        });
 
         console.log('sums');
         console.log(sums);
@@ -134,7 +134,7 @@ export class WhcgPeriodSummarizer extends PolymerElement {
         
         
         newResult[0].data.yearlyamounts.dataset = result2;
-        newResult[0].object = "Summakostnader"
+        newResult[0].object = "Summakostnader";
 
 
         test1.result = newResult;
