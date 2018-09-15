@@ -63,8 +63,8 @@ class WhcgPeriodSummarizer extends polymerElement_js.PolymerElement {
     }
 
     _whcgjsoninputChanged() {
-        console.log('this.whcgjsoninput');
-        console.log(this.whcgjsoninput);
+        // console.log('this.whcgjsoninput');
+        // console.log(this.whcgjsoninput);
     }
 
     // multiplier() {
@@ -72,10 +72,10 @@ class WhcgPeriodSummarizer extends polymerElement_js.PolymerElement {
     // };
 
     summarizer() {
-		console.log('SUMMARIZE!!!!');
-		console.log(this.whcgjsoninput);
+		// console.log('SUMMARIZE!!!!');
+		// console.log(this.whcgjsoninput);
 		let test1 = JSON.parse(this.whcgjsoninput);
-		console.log(test1);
+		// console.log(test1);
 
 
         
@@ -91,8 +91,8 @@ class WhcgPeriodSummarizer extends polymerElement_js.PolymerElement {
             return result;
         });
 
-        console.log('result');
-        console.log(result);
+        // console.log('result');
+        // console.log(result);
 
         let datasetKeys = test1.result[0].data.yearlyamounts.datasetkeys;
 
@@ -104,8 +104,8 @@ class WhcgPeriodSummarizer extends polymerElement_js.PolymerElement {
 
         let sums = datasetKeys.map(datasetKey => {
             return test1.result.reduce((acc, item, index) => {
-                console.log(item.data.yearlyamounts.dataset);
-                console.log(Number(item.data.yearlyamounts.dataset[datasetKey]));
+                // console.log(item.data.yearlyamounts.dataset);
+                // console.log(Number(item.data.yearlyamounts.dataset[datasetKey]));
                 if (isNaN(Number(item.data.yearlyamounts.dataset[datasetKey]))) {
                     return acc;
                 } else {
@@ -123,8 +123,8 @@ class WhcgPeriodSummarizer extends polymerElement_js.PolymerElement {
             }, acc);
         });
 
-        console.log('sums');
-        console.log(sums);
+        // console.log('sums');
+        // console.log(sums);
 
         let newResult = [];
 
@@ -145,8 +145,8 @@ class WhcgPeriodSummarizer extends polymerElement_js.PolymerElement {
 
 
 
-        console.log('test1!!!!!');
-        console.log(test1);
+        // console.log('test1!!!!!');
+        // console.log(test1);
 
 
        
@@ -193,8 +193,8 @@ class WhcgPeriodSummarizer extends polymerElement_js.PolymerElement {
 
 
 
-        console.log('whcgObj!!!!');
-        console.log(whcgObj);
+        // console.log('whcgObj!!!!');
+        // console.log(whcgObj);
         this.whcgjsonoutput = JSON.stringify(whcgObj);
 
         // console.log(this.whcgjsonoutput);
